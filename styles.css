@@ -1,0 +1,181 @@
+/* Основні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333; /* Темний фон для всього сайту */
+    color: #ccc; /* Текст став темнішим */
+  }
+  
+  /* Фонове зображення та заголовок */
+  .main-header {
+    background-image: url('1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Темніший фон */
+    color: #fff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .main-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .main-header p {
+    font-size: 1.2rem;
+  }
+  
+  .call-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: #ff6600; /* Яскравий помаранчевий для кнопки */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .call-btn:hover {
+    background-color: #e65c00; /* Темніший відтінок при наведенні */
+  }
+  
+  .call-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; /* Відступ між іконкою та текстом */
+  }
+  
+  .call-btn:focus {
+    outline: none;
+  }
+  
+  /* Блок послуг */
+  .services, .collaboration {
+    padding: 2rem;
+    text-align: center;
+    background-color: #444; /* Темніший фон */
+    margin: 2rem 0;
+    border-radius: 10px;
+  }
+  
+  .services h2, .collaboration h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .services p, .collaboration p {
+    font-size: 1.1rem;
+  }
+  
+  /* Адаптація для посилань */
+  a {
+    color: #ccc; /* Забираємо синій колір у посилань */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+  }
+  
+  /* Автопарк */
+  .ldv-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #555; /* Ще темніший фон */
+  }
+  
+  .ldv-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  
+  /* Соціальні мережі */
+  .main-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .main-footer h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons {
+    margin: 1rem 0;
+  }
+  
+  .social-icon {
+    width: 30px; /* Розмір іконки */
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2); /* Збільшення іконки при наведенні */
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+  }
+  
+  /* Адаптивність */
+  @media (max-width: 768px) {
+    .main-header h1 {
+      font-size: 2rem;
+    }
+  
+    .main-header p {
+      font-size: 1rem;
+    }
+  
+    .services, .collaboration, .ldv-section {
+      padding: 1rem;
+    }
+  
+    .social-icons img {
+      width: 25px;
+    }
+  
+    .call-btn {
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-header {
+      height: 70vh;
+    }
+  
+    .main-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .services h2, .collaboration h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
